@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6974c10f-3a7f-4c58-80a7-ce6403bbb324" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Network_experiment.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/Main.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/gbn/GBN_client.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/gbn/GBN_server.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/gbn/file.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/Cache.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/HttpHeader.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/ProxyParam.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/ProxyServer.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/ProxyThread.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/proxy/fish.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/syf/gbn/SR_client.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/gbn/file.txt" afterPath="$PROJECT_DIR$/out/production/Network_experiment/com/syf/gbn/file.txt" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java" afterPath="$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" afterPath="$PROJECT_DIR$/src/com/syf/gbn/SR_server.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/Test_nio.java" afterPath="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/testClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/testServer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" afterPath="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/syf/gbn/SR_client.java" afterPath="$PROJECT_DIR$/src/com/syf/gbn/SR_client.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +41,8 @@
       <file leaf-file-name="GBN_client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
-              <caret line="107" column="93" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="93" />
+            <state relative-caret-position="-114">
+              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -70,18 +51,18 @@
       <file leaf-file-name="GBN_server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1881">
-              <caret line="99" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SR_client.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SR_client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/SR_client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="209">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printTips#0;class#SR_client#0" expanded="false" />
@@ -91,14 +72,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SR_server.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SR_server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/SR_server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-              <folding>
-                <element signature="method#readIn#0;class#SR_server#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +98,8 @@
       <file leaf-file-name="file.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="1368">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,7 +129,6 @@
       <find>钓鱼</find>
       <find>File</find>
       <find>Got</find>
-      <find>curAck</find>
       <find>此外</find>
       <find>长久</find>
       <find>seqis</find>
@@ -152,6 +143,12 @@
       <find>cur</find>
       <find>the ack</find>
       <find>wait</find>
+      <find>sendTo</find>
+      <find>sendto</find>
+      <find>curAck</find>
+      <find>20</find>
+      <find>SEQ_SIZE</find>
+      <find>开始</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,20 +163,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/syf/first/proxy.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/syf/first/fish.txt" />
         <option value="$PROJECT_DIR$/src/com/syf/first/ProxyServer.java" />
         <option value="$PROJECT_DIR$/src/com/syf/first/GBN.java" />
         <option value="$PROJECT_DIR$/src/com/syf/gbn/GBN.java" />
         <option value="$PROJECT_DIR$/src/com/syf/gbn/Test_nio.java" />
         <option value="$PROJECT_DIR$/src/com/syf/proxy/ProxyServer.java" />
-        <option value="$PROJECT_DIR$/src/com/syf/gbn/file.txt" />
-        <option value="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" />
-        <option value="$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java" />
         <option value="$PROJECT_DIR$/src/com/syf/gbn/testServer.java" />
         <option value="$PROJECT_DIR$/src/com/syf/gbn/testClient.java" />
-        <option value="$PROJECT_DIR$/src/com/syf/gbn/SR_client.java" />
+        <option value="$PROJECT_DIR$/src/com/syf/gbn/file.txt" />
+        <option value="$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java" />
+        <option value="$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java" />
         <option value="$PROJECT_DIR$/src/com/syf/gbn/SR_server.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/syf/gbn/SR_client.java" />
       </list>
     </option>
   </component>
@@ -278,7 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GBN_server">
+  <component name="RunManager" selected="Application.SR_server">
     <configuration name="GBN_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -317,14 +314,28 @@
       <module name="Network_experiment" />
       <envs />
     </configuration>
-    <configuration name="ProxyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Network_experiment" />
+      <envs />
+    </configuration>
+    <configuration name="SR_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.syf.proxy.*" />
+          <option name="PATTERN" value="com.syf.gbn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.syf.proxy.ProxyServer" />
+      <option name="MAIN_CLASS_NAME" value="com.syf.gbn.SR_client" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -355,25 +366,6 @@
       <module name="Network_experiment" />
       <envs />
     </configuration>
-    <configuration name="testClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.syf.gbn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.syf.gbn.testClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Network_experiment" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -392,17 +384,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.GBN_server" />
       <item index="1" class="java.lang.String" itemvalue="Application.GBN_client" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SR_server" />
-      <item index="3" class="java.lang.String" itemvalue="Application.testClient" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ProxyServer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SR_client" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SR_server" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.GBN_server" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GBN_client" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ProxyServer" />
-        <item index="3" class="java.lang.String" itemvalue="Application.testClient" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SR_server" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SR_server" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SR_client" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GBN_server" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GBN_client" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +418,7 @@
       <workItem from="1525446796585" duration="34008000" />
       <workItem from="1525571712888" duration="5110000" />
       <workItem from="1525579224200" duration="5000" />
-      <workItem from="1525593037579" duration="1339000" />
+      <workItem from="1525593037579" duration="17460000" />
     </task>
     <task id="LOCAL-00001" summary="实现了GBN的基础功能，可以验收。">
       <created>1525501194114</created>
@@ -435,11 +427,25 @@
       <option name="project" value="LOCAL" />
       <updated>1525501194114</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="实现了GBN的基础功能，可以验收。">
+      <created>1525594377984</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525594377984</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SR协议，有点小问题，关于ack和timer数组大小如何设置。">
+      <created>1525607426652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525607426652</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85777000" />
+    <option name="totallyTimeSpent" value="101898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -447,13 +453,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.4409985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47775948" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09390445" sideWeight="0.21633889" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47775948" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.79273826" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39868203" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09390445" sideWeight="0.7836611" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -464,12 +471,11 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4161184" sideWeight="0.6959153" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4151565" sideWeight="0.6921331" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.4409985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.49394855" order="1" side_tool="false" content_ui="tabs" />
@@ -483,7 +489,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="实现了GBN的基础功能，可以验收。" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了GBN的基础功能，可以验收。" />
+    <MESSAGE value="SR协议，有点小问题，关于ack和timer数组大小如何设置。" />
+    <option name="LAST_COMMIT_MESSAGE" value="SR协议，有点小问题，关于ack和timer数组大小如何设置。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,9 +526,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
           <caret line="61" column="49" lean-forward="false" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-          <folding>
-            <element signature="method#readIn#0;class#SR_server#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,9 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding>
-            <element signature="method#readIn#0;class#SR_server#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,9 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3059">
           <caret line="161" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-          <folding>
-            <element signature="method#readIn#0;class#SR_server#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syf/proxy/fish.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -880,30 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="99" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="107" column="93" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/testClient.java" />
     <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/Test_nio.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -921,24 +888,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/SR_client.java">
+    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/file.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="1368">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#printTips#0;class#SR_client#0" expanded="false" />
-            <element signature="method#lossInLossRatio#0;class#SR_client#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/SR_server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+        <state relative-caret-position="247">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/GBN_client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syf/gbn/SR_client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="method#readIn#0;class#SR_server#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#printTips#0;class#SR_client#0" expanded="false" />
+            <element signature="method#lossInLossRatio#0;class#SR_client#0" expanded="false" />
           </folding>
         </state>
       </provider>

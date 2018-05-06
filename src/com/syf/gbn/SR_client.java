@@ -49,7 +49,7 @@ public class SR_client {
         int index = start;
         int i;
         for(i=0; i<WINDOW_SIZE; i++){
-            index = (i+start) % WINDOW_SIZE;
+            index = (i+start) % SEQ_SIZE;
             if(ack[index]) {
                 cnt += 1024;
                 ack[index] = false;
@@ -59,7 +59,17 @@ public class SR_client {
         System.out.println("Send to upper lawyer.");
         //System.out.println(new String(content, totalSize, totalSize + cnt, "UTF-8"));
         totalSize += cnt;
-        return (i+start)%SEQ_SIZE;
+        return (i+start) % SEQ_SIZE;
+    }
+
+    boolean inWindow(int seq, int rcv_base){
+        if(ack[seq])
+            return false;
+        int step = seq - rcv_base;
+        step = step >= 0 ? step: step+SEQ_SIZE;
+        if(step >= WINDOW_SIZE)
+            return false;
+        return true;
     }
 
     void start() throws IOException, InterruptedException {
@@ -117,18 +127,18 @@ public class SR_client {
                             }
                             System.out.println("recv a packet with a seq of " + seq);
                             if(seq == rcv_base) {
-                                ack[seq % WINDOW_SIZE] = true; // 返回ack
+                                ack[seq] = true; // 返回ack
                                 rcv_base = sendToUpper(rcv_base);   // rcv_base -> rcv_rightest, 这些数据打包发给应用层
-                            }else if(seq < rcv_base + WINDOW_SIZE && seq > rcv_base && !ack[seq % WINDOW_SIZE]){
+                            }else if(inWindow(seq, rcv_base)){
                                 // 接收数据包，但是窗口不移动
-                                ack[seq % WINDOW_SIZE] = true;
-                            }else if(seq >= rcv_base + WINDOW_SIZE){
-                                // 在窗口右边的包丢掉
-                                System.out.println("Not in window, ignore packet " + seq);
-                                break;
-                            }else if(seq >= rcv_base - WINDOW_SIZE && seq < rcv_base){
+                                ack[seq] = true;
+                            }else if(inWindow(seq, (rcv_base - WINDOW_SIZE + SEQ_SIZE) % SEQ_SIZE)){
                                 // 在窗口左边的包重新发ack
                                 // Do nothing
+                            }else{
+                                System.out.println("Not In Window, Ignore packet " + seq);
+                                // 在窗口右边的包忽略掉
+                                break;
                             }
                             System.out.println("rcv_base: " + rcv_base);
                             seq++;
