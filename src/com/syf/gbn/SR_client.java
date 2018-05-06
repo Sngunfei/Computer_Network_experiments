@@ -5,6 +5,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,10 +21,9 @@ public class SR_client {
     final int PORT = 10086;
     final String SERVER_IP = "127.0.0.1";
     final int BUFFER_LENGTH = 1026;
-    final int SEQ_SIZE = 20;
-    final int WINDOW_SIZE = 5;
-
-    boolean[] ack = new boolean[WINDOW_SIZE];
+    final int SEQ_SIZE = 32;
+    final int WINDOW_SIZE = 10;
+    boolean[] ack = new boolean[SEQ_SIZE];
     byte[] content = new byte[65535];  // 文件内容
     int totalSize = 0;
 
@@ -44,10 +44,12 @@ public class SR_client {
         return false;
     }
 
-    void sendToUpper(int start) throws UnsupportedEncodingException {
+    int sendToUpper(int start) throws UnsupportedEncodingException {
         int cnt = 0;
-        for(int i=0; i<WINDOW_SIZE; i++){
-            int index = (i+start)%WINDOW_SIZE;
+        int index = start;
+        int i;
+        for(i=0; i<WINDOW_SIZE; i++){
+            index = (i+start) % WINDOW_SIZE;
             if(ack[index]) {
                 cnt += 1024;
                 ack[index] = false;
@@ -55,8 +57,9 @@ public class SR_client {
                 break;
         }
         System.out.println("Send to upper lawyer.");
-        System.out.println(new String(content, totalSize, totalSize + cnt, "UTF-8"));
+        //System.out.println(new String(content, totalSize, totalSize + cnt, "UTF-8"));
         totalSize += cnt;
+        return (i+start)%SEQ_SIZE;
     }
 
     void start() throws IOException, InterruptedException {
@@ -82,6 +85,7 @@ public class SR_client {
                 System.arraycopy(cmd.getBytes(),0, bytes, 0, cmd.getBytes().length);
                 packet.setData(bytes);
                 socket.send(packet);
+                Arrays.fill(ack, false);
                 while(true){
                     socket.receive(packet);
                     byte[] buffer = packet.getData();
@@ -113,20 +117,24 @@ public class SR_client {
                             }
                             System.out.println("recv a packet with a seq of " + seq);
                             if(seq == rcv_base) {
-                                ack[rcv_base] = true; // 返回ack
-                                sendToUpper(rcv_base);   // rcv_base -> rcv_rightest, 这些数据打包发给应用层
-                                rcv_base++;    // 窗口移动
-                                rcv_base %= SEQ_SIZE;
-                            }else if(seq > rcv_base && !ack[seq]){
+                                ack[seq % WINDOW_SIZE] = true; // 返回ack
+                                rcv_base = sendToUpper(rcv_base);   // rcv_base -> rcv_rightest, 这些数据打包发给应用层
+                            }else if(seq < rcv_base + WINDOW_SIZE && seq > rcv_base && !ack[seq % WINDOW_SIZE]){
                                 // 接收数据包，但是窗口不移动
-                                ack[seq] = true;
-                            }else if(seq < rcv_base){
-                                // 之前某个ack丢掉，重新发过来后直接返回ack即可，
-                                // do nothing
+                                ack[seq % WINDOW_SIZE] = true;
+                            }else if(seq >= rcv_base + WINDOW_SIZE){
+                                // 在窗口右边的包丢掉
+                                System.out.println("Not in window, ignore packet " + seq);
+                                break;
+                            }else if(seq >= rcv_base - WINDOW_SIZE && seq < rcv_base){
+                                // 在窗口左边的包重新发ack
+                                // Do nothing
                             }
+                            System.out.println("rcv_base: " + rcv_base);
+                            seq++;
                             if(lossInLossRatio(ackLossRatio)){
                                 // 模拟ack丢失
-                                System.out.println("The ack of " + ++seq + " loss.");
+                                System.out.println("The ack of " + seq + " loss.");
                                 continue;
                             }
                             buffer[0] = (byte)(seq);
