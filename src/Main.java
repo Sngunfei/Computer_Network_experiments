@@ -3,10 +3,7 @@ import java.net.InetSocketAddress;
 
 public class Main {
 
-    public static void main(String args[]){
-        System.out.println(-5%21);
+    public static void main(String args[]) {
+        System.out.println("hello world!");
     }
-
-
-
 }
